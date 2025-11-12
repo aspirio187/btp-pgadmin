@@ -16,7 +16,7 @@ This is a simple example of deploying pgAdmin on SAP BTP Cloud Foundry environme
 1. Clone this repository to your local machine.
 2. Navigate to the cloned directory.
 3. Update the `manifest.yml` file with your PostgreSQL service instance name and desired pgAdmin credentials.
-4. Run the following command to deploy the application `bash cf push -f manifest.yml`
+4. Run the following command to deploy the application `cf push -f manifest.yml`
 5. Once the deployment is complete, you can access pgAdmin using the URL provided in the Cloud Foundry application summary.
 6. Log in to pgAdmin using the credentials you specified in the `manifest.yml` file.
 7. Add a new server in pgAdmin using the PostgreSQL service instance credentials.
