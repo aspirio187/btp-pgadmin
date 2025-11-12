@@ -1,0 +1,14 @@
+applications:
+  - name: pgadmin4
+    docker:
+      image: dpage/pgadmin4:latest
+    memory: 1024M
+    instances: 1
+    health-check-type: process
+    random-route: true
+    env:
+      PGADMIN_DEFAULT_EMAIL: [email address]
+      PGADMIN_DEFAULT_PASSWORD: [password for pgadmin]
+      PGADMIN_LISTEN_ADDRESS: 0.0.0.0
+    services:
+      - [postgresql db service instance name]
